@@ -1,4 +1,4 @@
 class Starsign < ApplicationRecord
-  belongs_to :leader
-  belongs_to :user
+  has_many :users
+  has_many :leaders
 end

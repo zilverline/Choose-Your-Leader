@@ -5,6 +5,30 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+#september 23rd to october 22nd
+libra = Starsign.create(name: "Libra", start_date: Time.new, end_date: Time.new)
+#august 23rd to september 22nd
+virgo = Starsign.create(name: "Virgo", start_date: Time.new, end_date: Time.new)
+# february 19th to march 20th
+pisces = Starsign.create(name: "Pisces", start_date: Time.new, end_date: Time.new)
+#april 20th to may 20th
+taurus = Starsign.create(name: "Taurus", start_date: Time.new, end_date: Time.new)
+#march 21st to april 19th
+aries = Starsign.create(name: "Aries", start_date: Time.new, end_date: Time.new)
+#may 21st to june 20th
+gemini = Starsign.create(name: "Gemini", start_date: Time.new, end_date: Time.new)
+#june 21st to july 22nd
+cancer = Starsign.create(name: "Cancer", start_date: Time.new, end_date: Time.new)
+#july 23rd to august 22nd
+leo = Starsign.create(name: "Leo", start_date: Time.new, end_date: Time.new)
+#october 23rd to november 21st
+scorpio = Starsign.create(name: "Scorpio", start_date: Time.new, end_date: Time.new)
+#november 22nd to December 21st
+saggitarius = Starsign.create(name: "Saggitarius", start_date: Time.new, end_date: Time.new)
+#december 22nd to January 19th
+capricorn = Starsign.create(name: "Capricorn", start_date: Time.new, end_date: Time.new)
+#january 20th to february 18th
+aquarius = Starsign.create(name: "Aquarius", start_date: Time.new, end_date: Time.new)
 
 putin = Leader.create(name: "Vladimir Vladimirovich Putin", current: true, position: "President", country: "the Russian Federation", starsign: libra)
 merkel = Leader.create(name: "Angela Merkel", current: true, position: "the Federal Republic of Germany", starsign: cancer)
@@ -26,37 +50,12 @@ khan = Leader.new(name: "Imran Khan", current: true, position: "Prime Minister",
 kim = Leader.new(name: "Kim Jong-Un", current: true, position: "Supreme Leader", country: "Democratic People's Republic of Korea", starsign: capricorn)
 ardern = Leader.new(name: "Jacinda Ardern", current: true, position: "Prime Minister", country: "New Zealand", starsign: cancer)
 suukyi = Leader.new(name: "Aung San Suu Kyi", current: true, position: "State Counsellor", country: "Myanmar", starsign: gemini)
-kenyatta = Leader.new(name: "Uhuru Kenyatta", current: true, postiion: "President", country: "Kenya", starsign: scorpio)
+kenyatta = Leader.new(name: "Uhuru Kenyatta", current: true, position: "President", country: "Kenya", starsign: scorpio)
 abe = Leader.new(name: "Shinzo Abe", current: true, position: "Prime Minister", country: "Japan", starsign: virgo)
 obama = Leader.new(name: "Barack Hussein Obama", current: false, position: "President", country: "the United States of America", starsign: leo)
 mugabe = Leader.new(name: "Robert Mugabe", current: false, position: "President", country: "Zimbabwe", starsign: pisces)
 mandela = Leader.new(name: "Nelson Mandela", current: false, position: "President", country: "South Africa", starsign: cancer)
-berlusconi = Leader.new(name: "Silvio Berlusconi", current: false, position: "Prime Minister" country: "Italy", starsign: libra)
+berlusconi = Leader.new(name: "Silvio Berlusconi", current: false, position: "Prime Minister", country: "Italy", starsign: libra)
 tsipras = Leader.new(name: "Alexis Tsipras", current: true, position: "Prime Minister", country: "Greece", starsign: leo)
 khamenei = Leader.new(name: "Ali Khamenei", current: true, position: "Supreme Leader", starsign: aries)
-
-
-#september 23rd to october 22nd
-libra = Starsign.create(name: "Libra")
-#august 23rd to september 22nd
-virgo = Starsign.create(name: "Virgo")
-# february 19th to march 20th
-pisces = Starsign.create(name: "Pisces")
-#april 20th to may 20th
-taurus = Starsign.create(name: "Taurus")
-#march 21st to april 19th
-aries = Starsign.create(name: "Aries")
-#may 21st to june 20th
-gemini = Starsign.create(name: "Gemini")
-#june 21st to july 22nd
-cancer = Starsign.create(name: "Cancer")
-#july 23rd to august 22nd
-leo = Starsign.create(name: "Leo")
-#october 23rd to november 21st
-scorpio = Starsign.create(name: "Scorpio")
-#november 22nd to December 21st
-saggitarius = Starsign.create(name: )
-#december 22nd to January 19th
-capricorn = Starsign.create(name: )
-#january 20th to february 18th
-aquarius = Starsign.create(name: )
+sisi = Leader.new(name: "Abdel Fattah el-Sisi", current: true, position: "President", starsign: scorpio)

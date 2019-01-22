@@ -1,4 +1,5 @@
 class User < ApplicationRecord
-  has_one :starsign
-  has_many :leaders, through :starsigns
+  belongs_to :starsign
+  has_many :leaders, through :starsign
+
 end
