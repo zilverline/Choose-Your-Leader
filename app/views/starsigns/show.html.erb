@@ -1,0 +1,10 @@
+<h1 class="header mt-5"><%= @starsign.name %></h1>
+
+<h4><%= pluralize(@starsign.leaders.count, 'leader') %></h4>
+<ul>
+<% @starsign.leaders.each do |leader| %>
+  <div class="box">
+  <li id="para"><div class="h3"><%= link_to leader.name, leader_path(leader) %></li>
+  </div>
+  <% end %>
+</ul>

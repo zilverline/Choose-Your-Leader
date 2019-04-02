@@ -18,17 +18,17 @@ ActiveRecord::Schema.define(version: 2019_01_22_135111) do
     t.boolean "current"
     t.string "position"
     t.string "country"
+    t.string "img_url"
   end
 
   create_table "starsigns", force: :cascade do |t|
     t.string "name"
-    t.datetime "start_date"
-    t.datetime "end_date"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.datetime "birthday"
+    t.string "month"
+    t.integer "day"
     t.integer "starsign_id"
   end
 

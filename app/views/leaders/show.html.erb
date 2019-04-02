@@ -1,0 +1,19 @@
+<div class="h1 mt-5" id="header"><%= @leader.name %></div>
+
+<img src="<%= @leader.img_url%>"/>
+
+<div class="h3" id="para">Your leader is <%= @leader.name %>, the
+
+  <% if @leader.current == true %>
+    current
+  <% elsif @leader.current != true %>
+    former
+  <% end %>
+   <%= @leader.position %> of <%= @leader.country %>.
+
+<br>
+
+<br><%= @leader.name %> is a <%= @leader.starsign.name %>, just like you.</div>
+
+<br>
+<div class="mt-4"><%= link_to 'Unhappy with your leader? Want to try again?', new_user_path %></div>

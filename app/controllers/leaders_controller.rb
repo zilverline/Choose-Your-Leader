@@ -1,8 +1,18 @@
 class LeadersController < ApplicationController
-  before_action only: [:show]
+  # before_action only: [:show]
+
+  def index
+    @leaders = Leader.all
+  end
 
   def show
-    @Leader = Leader.find(params[:id])
+    @leader = Leader.find(params[:id])
   end
+
+  # private
+  #
+  # def leader_params
+  #
+  # end
 
 end

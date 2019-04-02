@@ -1,0 +1,28 @@
+<div class="h1 mt-4" id="header">Hi, <%= @user.name %>!</div>
+
+<div class="h3" id="para">You are <%= @user.starsign.name %>!</div>
+
+<div class="h3" id="para">Maybe you knew that already, but what you don’t know yet is your leader.</div>
+
+<br>
+
+<% Leader.all.each do |leader| %>
+
+  <% if leader.starsign.name == @user.starsign.name %>
+      <%# <% @@myLeaders = [] %> %>
+      <br>
+      <div id="leader"><%= link_to 'Choose Me', leader_path(leader) %></div>
+      <br>
+      <%# <% @@myLeaders.push(leader.name) %> %>
+
+      <% end %>
+<% end %>
+<!-- <br>
+<div id="leader"><%= @@myLeaders.length %></div>
+<br>
+<% myRandomNumber = rand(@@myLeaders.length) %>
+  <br>
+<div id="leader"><%= myRandomNumber %></div>
+
+<br>
+<%= link_to 'Choose your leader!', leader_path(@user) %> -->

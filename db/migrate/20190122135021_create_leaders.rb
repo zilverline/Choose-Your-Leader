@@ -6,6 +6,7 @@ class CreateLeaders < ActiveRecord::Migration[5.2]
       t.boolean :current
       t.string :position
       t.string :country
+      t.string :img_url
     end
   end
 end

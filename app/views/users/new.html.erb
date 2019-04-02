@@ -1,0 +1,38 @@
+
+<h1 class="header mt-5">Welcome to<br><br> Choose Your Leader</h1>
+<br>
+<h3 class="header mt-3 mb-4">Choose a world leader by entering your birthday</h3>
+<br>
+<div class="card card-inverse card-primary">
+  <div class="card-body"></div>
+<%= form_for @user do |f| %>
+<br>
+<div class="field form-control form-group">
+<%= f.label :name, "What's your first name?", :class=> "form-control-static labels" %>
+<br>
+<%= f.text_field :name, :placeholder=>"Your name", :class=>"input-fields mb-2 mt-2 py-2 px-2 h3" %>
+<br>
+</div>
+<div class="field form-control form-group">
+<%= f.label :starsign_id, :class=> "form-control-static labels" %>
+<br>
+<%= f.collection_select :starsign_id, Starsign.all, :id, :name, {}, {:class=>"input-fields h4"} %>
+<br>
+</div>
+<div class="field form-control form-group">
+<%= f.label :month, :class=>"labels" %>
+<br>
+<%= f.collection_select :month, User::MONTHS, :to_s, :to_s, {}, {:class=>"input-fields h4"} %>
+</div>
+<div class="field form-control form-group">
+<%= f.label :day, :class=>"form-control-static labels" %>
+<br>
+<%= f.number_field :day, min: 1, max: 31, :class=> "input-fields mb-2 mt-2 h4" %>
+<br>
+</div>
+<div class="action">
+<br>
+<%= f.submit 'Click here!', :class=> "btn btn-info btn-lg btn-block mb-2" %>
+<% end %>
+</div>
+</div>
